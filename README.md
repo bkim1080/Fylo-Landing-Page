@@ -22,7 +22,7 @@
 
 This is a single-page landing page for a fictional company called Fylo. The layout is responsive for desktop and mobile devices. It includes a basic email form with basic client-side validation.
 
-Website Link (hosted via Netlify): [Fylo Landing Page](https://profound-narwhal-97efc1.netlify.app/)
+Website Link (hosted via Netlify): [Fylo Landing Page](https://darling-starlight-677659.netlify.app/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 

@@ -68,7 +68,7 @@ p {
     font-size: 1.125rem; } }
 
 .footer-links a:hover {
-  font-weight: 700; }
+  text-decoration: underline; }
 
 .heading-feature,
 .heading-productive,
@@ -295,7 +295,6 @@ ul li {
     width: 300px; } }
 
 .navbar-links a:hover {
-  font-weight: 700;
   text-decoration: underline; }
 
 .card {
