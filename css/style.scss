@@ -27,9 +27,9 @@ ul {
 
 .input-email {
 	border-radius: 30px;
-	width: 100%;
 	margin: 1.5rem 0 1.4rem 0;
-	padding: 14px;
+	padding: 1rem;
+	width: 100%;
 }
 
 .section-features,
@@ -76,6 +76,12 @@ p {
 	line-height: 1.6;
 }
 
+@media (min-width: 1024px) {
+	.footer {
+		font-size: 1.125rem;
+	}
+}
+
 .footer-links a:hover {
 	font-weight: 700;
 }
@@ -96,14 +102,14 @@ p {
 }
 
 .link-productive {
-	color: $color-accent-cyan;
 	border-bottom: 1px solid $color-accent-cyan;
+	color: $color-accent-cyan;
 	padding-bottom: 0.25rem;
 }
 
 .link-productive:hover {
-	color: $color-neutral;
 	border-bottom: 1px solid $color-neutral;
+	color: $color-neutral;
 }
 
 .link-productive img {
@@ -116,20 +122,18 @@ p {
 
 @media (min-width: 1024px) {
 	.section-features h2 {
-		font-size: 1.25rem;
+		font-size: 1.375rem;
 		font-weight: 700;
 	}
 
-	.section-features p {
-		font-size: 1rem;
+	.section-features p,
+	.section-productive p,
+	.section-signup p {
+		font-size: 1.125rem;
 	}
 
 	.section-intro p {
 		font-size: 1.25rem;
-	}
-
-	.section-productive p {
-		font-size: 1.125rem;
 	}
 }
 
@@ -186,8 +190,8 @@ ul li {
 }
 
 .footer-address img {
-	margin-right: 1.9rem;
 	align-self: flex-start;
+	margin-right: 1.9rem;
 }
 
 .footer-email img,
@@ -220,8 +224,8 @@ ul li {
 	}
 
 	.footer .container {
-		width: 85%;
 		padding-bottom: 5rem;
+		width: 85%;
 	}
 
 	.footer-email,
@@ -269,8 +273,8 @@ ul li {
 @media (min-width: 1024px) {
 	.section-features .container {
 		display: grid;
-		grid-template: repeat(2, auto) / repeat(2, auto);
 		gap: 120px;
+		grid-template: repeat(2, auto) / repeat(2, auto);
 		padding-top: 5rem;
 		width: 65%;
 	}
@@ -297,19 +301,19 @@ ul li {
 		flex: 1;
 	}
 	.section-productive-text {
-		display: flex;
 		align-items: center;
+		display: flex;
 	}
 }
 
 .section-signup {
 	border-radius: 15px;
+	left: 6%;
+	max-width: 870px;
 	padding: 2.5rem 1.5rem 2.25rem 1.5rem;
 	position: absolute;
 	right: 6%;
-	left: 6%;
 	top: -11rem;
-	max-width: 870px;
 }
 
 @media (min-width: 1024px) {
@@ -344,15 +348,15 @@ ul li {
 	display: flex;
 	justify-content: space-between;
 	margin: 0 auto;
+	max-width: 1300px;
 	padding: 2rem 0 3rem 0;
 	width: 87%;
-	max-width: 1300px;
 }
 
 @media (min-width: 1024px) {
 	.navbar {
-		width: 88%;
 		padding-top: 4.5rem;
+		width: 88%;
 	}
 }
 
@@ -378,7 +382,7 @@ ul li {
 		display: flex;
 		font-size: 1.25rem;
 		justify-content: space-between;
-		width: 280px;
+		width: 300px;
 	}
 }
 
@@ -457,7 +461,7 @@ ul li {
 .btn {
 	background: linear-gradient(to right, $color-accent-cyan, $color-accent-blue);
 	border: none;
-	border-radius: 1.9em;
+	border-radius: 30px;
 	color: $color-neutral;
 	cursor: pointer;
 	font-weight: 700;

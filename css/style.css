@@ -25,9 +25,9 @@ ul {
 
 .input-email {
   border-radius: 30px;
-  width: 100%;
   margin: 1.5rem 0 1.4rem 0;
-  padding: 14px; }
+  padding: 1rem;
+  width: 100%; }
 
 .section-features,
 .section-productive,
@@ -63,6 +63,10 @@ h1 {
 p {
   line-height: 1.6; }
 
+@media (min-width: 1024px) {
+  .footer {
+    font-size: 1.125rem; } }
+
 .footer-links a:hover {
   font-weight: 700; }
 
@@ -78,13 +82,13 @@ p {
     font-size: 1.875rem; } }
 
 .link-productive {
-  color: #65e2d9;
   border-bottom: 1px solid #65e2d9;
+  color: #65e2d9;
   padding-bottom: 0.25rem; }
 
 .link-productive:hover {
-  color: white;
-  border-bottom: 1px solid white; }
+  border-bottom: 1px solid white;
+  color: white; }
 
 .link-productive img {
   vertical-align: middle; }
@@ -94,14 +98,14 @@ p {
 
 @media (min-width: 1024px) {
   .section-features h2 {
-    font-size: 1.25rem;
+    font-size: 1.375rem;
     font-weight: 700; }
-  .section-features p {
-    font-size: 1rem; }
+  .section-features p,
+  .section-productive p,
+  .section-signup p {
+    font-size: 1.125rem; }
   .section-intro p {
-    font-size: 1.25rem; }
-  .section-productive p {
-    font-size: 1.125rem; } }
+    font-size: 1.25rem; } }
 
 h1 {
   padding: 2.25rem 0 1.75rem; }
@@ -142,8 +146,8 @@ ul li {
   margin-bottom: 1rem; }
 
 .footer-address img {
-  margin-right: 1.9rem;
-  align-self: flex-start; }
+  align-self: flex-start;
+  margin-right: 1.9rem; }
 
 .footer-email img,
 .footer-phone img {
@@ -168,8 +172,8 @@ ul li {
     gap: 5rem;
     justify-content: space-between; }
   .footer .container {
-    width: 85%;
-    padding-bottom: 5rem; }
+    padding-bottom: 5rem;
+    width: 85%; }
   .footer-email,
   .footer-links,
   .footer-social,
@@ -203,8 +207,8 @@ ul li {
 @media (min-width: 1024px) {
   .section-features .container {
     display: grid;
-    grid-template: repeat(2, auto)/repeat(2, auto);
     gap: 120px;
+    grid-template: repeat(2, auto)/repeat(2, auto);
     padding-top: 5rem;
     width: 65%; } }
 
@@ -225,17 +229,17 @@ ul li {
   .section-productive .container > * {
     flex: 1; }
   .section-productive-text {
-    display: flex;
-    align-items: center; } }
+    align-items: center;
+    display: flex; } }
 
 .section-signup {
   border-radius: 15px;
+  left: 6%;
+  max-width: 870px;
   padding: 2.5rem 1.5rem 2.25rem 1.5rem;
   position: absolute;
   right: 6%;
-  left: 6%;
-  top: -11rem;
-  max-width: 870px; }
+  top: -11rem; }
 
 @media (min-width: 1024px) {
   .section-signup {
@@ -261,14 +265,14 @@ ul li {
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
+  max-width: 1300px;
   padding: 2rem 0 3rem 0;
-  width: 87%;
-  max-width: 1300px; }
+  width: 87%; }
 
 @media (min-width: 1024px) {
   .navbar {
-    width: 88%;
-    padding-top: 4.5rem; } }
+    padding-top: 4.5rem;
+    width: 88%; } }
 
 .logo-header {
   width: 90px; }
@@ -288,7 +292,7 @@ ul li {
     display: flex;
     font-size: 1.25rem;
     justify-content: space-between;
-    width: 280px; } }
+    width: 300px; } }
 
 .navbar-links a:hover {
   font-weight: 700;
@@ -350,7 +354,7 @@ ul li {
 .btn {
   background: linear-gradient(to right, #65e2d9, #339ecc);
   border: none;
-  border-radius: 1.9em;
+  border-radius: 30px;
   color: white;
   cursor: pointer;
   font-weight: 700; }

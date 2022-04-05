@@ -1,43 +1,41 @@
 {
-  "name": "fylo-dark-theme-landing-page-master",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "dependencies": {
-    "copyfiles": "^2.2.0",
-    "font-awesome": "^4.7.0",
-    "imagemin-cli": "^5.1.0",
-    "lite-server": "^2.6.1",
-    "node-sass": "^4.14.1",
-    "onchange": "^7.0.0",
-    "parallelshell": "^3.0.1",
-    "rimraf": "^3.0.2",
-    "usemin-cli": "^0.6.0"
-  },
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin",
-    "clean": "rimraf dist",
-    "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
-    "imagemin": "imagemin img/* -o dist/img",
-    "lite": "lite-server",
-    "scss": "node-sass -o css/ css/",
-    "start": "npm run watch:all",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "usemin": "usemin index.html -d dist --htmlmin -o dist/index.html",
-        "watch:all": "parallelshell 'npm run watch:scss' 'npm run lite'",
-    "watch:scss": "onchange 'css/*.scss' -- npm run scss"
-
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/bkim1080/Fylo-Landing-Page.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/bkim1080/Fylo-Landing-Page/issues"
-  },
-  "homepage": "https://github.com/bkim1080/Fylo-Landing-Page#readme"
+	"name": "fylo-dark-theme-landing-page-master",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"dependencies": {
+		"copyfiles": "^2.2.0",
+		"font-awesome": "^4.7.0",
+		"imagemin-cli": "^5.1.0",
+		"lite-server": "^2.6.1",
+		"node-sass": "^4.14.1",
+		"onchange": "^7.0.0",
+		"parallelshell": "^3.0.1",
+		"rimraf": "^3.0.2",
+		"usemin-cli": "^0.6.0"
+	},
+	"devDependencies": {},
+	"scripts": {
+		"build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin",
+		"clean": "rimraf dist",
+		"copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
+		"imagemin": "imagemin img/* -o dist/img",
+		"lite": "lite-server",
+		"scss": "node-sass -o css/ css/",
+		"start": "npm run watch:all",
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"usemin": "usemin index.html -d dist --htmlmin -o dist/index.html",
+		"watch:all": "parallelshell 'npm run watch:scss' 'npm run lite'",
+		"watch:scss": "onchange 'css/*.scss' -- npm run scss"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/bkim1080/Fylo-Landing-Page.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/bkim1080/Fylo-Landing-Page/issues"
+	},
+	"homepage": "https://github.com/bkim1080/Fylo-Landing-Page#readme"
 }
